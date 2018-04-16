@@ -32,7 +32,7 @@ namespace WorktipsWallet
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
                 string thisVersionString = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
                 bool needsUpdate = false;
-                var builtURL = "";
+                var builtURL = "https://api.github.com/repos/samvicky26/Worktips-GUI-version-2/releases/latest";
 
                 var cli = new WebClient();
                 cli.Headers[HttpRequestHeader.ContentType] = "application/json";
